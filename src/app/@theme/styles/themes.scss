@@ -11,7 +11,7 @@ $nb-themes: nb-register-theme((
   sidebar-header-gap: 2rem,
   sidebar-header-height: initial,
   layout-content-width: 1400px,
-
+  color-bg-active
   font-main: Roboto,
   font-secondary: Exo,
 ), default, default);
@@ -21,7 +21,7 @@ $nb-themes: nb-register-theme((
   sidebar-header-gap: 2rem,
   sidebar-header-height: initial,
   layout-content-width: 1400px,
-
+  /*Change color in the theme*/
   font-main: Roboto,
   font-secondary: Exo,
 ), cosmic, cosmic);
