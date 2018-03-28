@@ -30,7 +30,6 @@ import {
 import { CapitalizePipe, PluralPipe, RoundPipe, TimingPipe } from './pipes';
 import {
   SampleLayoutComponent,
-  ThreeColumnsLayoutComponent,
 } from './layouts';
 import { DEFAULT_THEME } from './styles/theme.default';
 import { COSMIC_THEME } from './styles/theme.cosmic';
@@ -60,7 +59,6 @@ const COMPONENTS = [
   FooterComponent,
   ThemeSettingsComponent,
   SampleLayoutComponent,
-  ThreeColumnsLayoutComponent,
 ];
 
 const PIPES = [
