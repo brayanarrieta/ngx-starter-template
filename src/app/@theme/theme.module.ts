@@ -24,7 +24,6 @@ import { NbSecurityModule } from '@nebular/security';
 import {
   FooterComponent,
   HeaderComponent,
-  ThemeSettingsComponent,
   ThemeSwitcherComponent,
 } from './components';
 import { CapitalizePipe, PluralPipe, RoundPipe, TimingPipe } from './pipes';
@@ -57,7 +56,6 @@ const COMPONENTS = [
   ThemeSwitcherComponent,
   HeaderComponent,
   FooterComponent,
-  ThemeSettingsComponent,
   SampleLayoutComponent,
 ];
 
