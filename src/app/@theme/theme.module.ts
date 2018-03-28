@@ -31,7 +31,6 @@ import { CapitalizePipe, PluralPipe, RoundPipe, TimingPipe } from './pipes';
 import {
   SampleLayoutComponent,
   ThreeColumnsLayoutComponent,
-  TwoColumnsLayoutComponent,
 } from './layouts';
 import { DEFAULT_THEME } from './styles/theme.default';
 import { COSMIC_THEME } from './styles/theme.cosmic';
@@ -62,7 +61,6 @@ const COMPONENTS = [
   ThemeSettingsComponent,
   SampleLayoutComponent,
   ThreeColumnsLayoutComponent,
-  TwoColumnsLayoutComponent,
 ];
 
 const PIPES = [
