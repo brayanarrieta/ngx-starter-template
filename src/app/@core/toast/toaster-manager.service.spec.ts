@@ -5,7 +5,7 @@ import { ToasterManagerService } from './toaster-manager.service';
 describe('ToasterManagerService', () => {
   beforeEach(() => {
     TestBed.configureTestingModule({
-      providers: [ToasterManagerService]
+      providers: [ToasterManagerService],
     });
   });
 
