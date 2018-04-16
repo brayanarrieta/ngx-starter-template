@@ -1,15 +1,8 @@
-import { Component, OnInit } from '@angular/core';
-
+import { Component } from '@angular/core';
+import 'style-loader!angular2-toaster/toaster.css';
 @Component({
   selector: 'ngx-examples',
-  template: `<toaster-container></toaster-container>
-              <router-outlet></router-outlet>`,
+  template: ` <router-outlet></router-outlet>`,
 })
-export class ExamplesComponent implements OnInit {
-
-  constructor() { }
-
-  ngOnInit() {
-  }
-
+export class ExamplesComponent {
 }

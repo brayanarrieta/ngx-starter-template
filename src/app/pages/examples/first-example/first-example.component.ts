@@ -1,17 +1,15 @@
-import { Component, OnInit } from '@angular/core';
-import {ToasterManagerService} from './toaster-manager.service';
+import { Component } from '@angular/core';
+import {ToasterManagerService} from '../../../@core/toast/toaster-manager.service';
+import {configToasterManager} from '../../../@core/toast/config';
 @Component({
   selector: 'ngx-first-example',
   templateUrl: './first-example.component.html',
   styleUrls: ['./first-example.component.scss'],
 })
-export class FirstExampleComponent implements OnInit {
+export class FirstExampleComponent {
+  config= configToasterManager;
   constructor(private toasterManagerService: ToasterManagerService) {}
-
-  ngOnInit() {
-  }
   showToast() {
-    this.toasterManagerService.makeToast();
+    this.toasterManagerService.makeToast('default', 'title', 'content');
   }
-
 }

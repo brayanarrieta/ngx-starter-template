@@ -5,7 +5,7 @@ import { ExamplesRoutingModule } from './examples-routing.module';
 import { ExamplesComponent } from './examples.component';
 import { FirstExampleComponent } from './first-example/first-example.component';
 import {ThemeModule} from '../../@theme/theme.module';
-import {ToasterManagerService} from './first-example/toaster-manager.service';
+import {ToasterManagerService} from '../../@core/toast/toaster-manager.service';
 import {ToasterModule} from 'angular2-toaster';
 
 @NgModule({
@@ -13,7 +13,7 @@ import {ToasterModule} from 'angular2-toaster';
     CommonModule,
     ThemeModule,
     ExamplesRoutingModule,
-    ToasterModule,
+    ToasterModule.forRoot(),
   ],
   declarations: [ExamplesComponent, FirstExampleComponent],
   providers: [ToasterManagerService],
