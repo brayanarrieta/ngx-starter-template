@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import {BodyOutputType, Toast, ToasterConfig, ToasterService} from 'angular2-toaster';
-
+import 'style-loader!angular2-toaster/toaster.css';
 @Injectable()
 export class ToasterManagerService {
   config: ToasterConfig;

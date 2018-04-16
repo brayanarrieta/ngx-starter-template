@@ -16,6 +16,6 @@ import {ToasterModule} from 'angular2-toaster';
     ToasterModule,
   ],
   declarations: [ExamplesComponent, FirstExampleComponent],
-  providers: [],
+  providers: [ToasterManagerService],
 })
 export class ExamplesModule { }
