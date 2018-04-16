@@ -1,21 +1,8 @@
-import { Component, OnInit } from '@angular/core';
-// import {ToasterManagerService} from './toaster-manager.service';
+import { Injectable } from '@angular/core';
 import {BodyOutputType, Toast, ToasterConfig, ToasterService} from 'angular2-toaster';
-import 'style-loader!angular2-toaster/toaster.css';
-@Component({
-  selector: 'ngx-first-example',
-  templateUrl: './first-example.component.html',
-  styleUrls: ['./first-example.component.scss'],
-})
-export class FirstExampleComponent implements OnInit {
-  // constructor(private toasterManagerService: ToasterManagerService) {}
 
-  ngOnInit() {
-  }
-  constructor(private toasterService: ToasterService) {}
-  // showToast() {
-  //   this.toasterManagerService.makeToast();
-  // }
+@Injectable()
+export class ToasterManagerService {
   config: ToasterConfig;
   // params config
   position = 'toast-top-right';
@@ -31,7 +18,7 @@ export class FirstExampleComponent implements OnInit {
   isDuplicatesPrevented = false;
   isCloseButton = true;
 
-
+  constructor(private toasterService: ToasterService) {}
 
 
   makeToast() {

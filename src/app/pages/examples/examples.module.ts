@@ -5,13 +5,17 @@ import { ExamplesRoutingModule } from './examples-routing.module';
 import { ExamplesComponent } from './examples.component';
 import { FirstExampleComponent } from './first-example/first-example.component';
 import {ThemeModule} from '../../@theme/theme.module';
+import {ToasterManagerService} from './first-example/toaster-manager.service';
+import {ToasterModule} from 'angular2-toaster';
 
 @NgModule({
   imports: [
     CommonModule,
-    ExamplesRoutingModule,
     ThemeModule,
+    ExamplesRoutingModule,
+    ToasterModule,
   ],
   declarations: [ExamplesComponent, FirstExampleComponent],
+  providers: [],
 })
 export class ExamplesModule { }
